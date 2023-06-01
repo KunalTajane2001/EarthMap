@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+p{
+ font-size: small;
+}
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+    background-color: #f5f5f5;
+}
+
+#visualization {
+    width: 940px;
+    height: 680px;
+}
+
+
+/* Rotating Earth */
+.Animated-area{
+    background-color: rgb(118, 194, 245);
+    margin: 20px 0px 20px 0px;
+  }
+  #earth{
+  margin-left: 25%
+  }
+  #earth {
+    width: 400px;
+    height: 400px;
+    /* background: url(https://web.archive.org/web/20150807125159if_/http://www.noirextreme.com/digital/Earth-Color4096.jpg); */
+   background: url(https://wallpapercave.com/wp/wp2593855.jpg );
+    border-radius: 50%;
+    background-size: 610px;
+    box-shadow: inset 8px 36px 80px 36px rgb(51, 51, 51), inset -6px 0 12px 4px rgba(212, 208, 208, 0.3); 
+    animation-name: rotate-earth;
+    animation-duration: 12s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    -webkit-animation-name: rotate-earth;
+       -webkit-animation-duration: 12s;
+       -webkit-animation-iteration-count: infinite;
+       -webkit-animation-timing-function: linear;
+  }
+  @keyframes rotate-earth {
+    from {
+      background-position: 0px 0px;
+    }
+    to {
+      background-position: 610px 0px;
+    }
+  }
+  @-webkit-keyframes rotate-earth {
+    from {
+      background-position: 0px 0px;
+    }
+    to {
+      background-position: 610px 0px;
+    }
+  }
